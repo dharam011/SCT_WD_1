@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(255, 250, 250);
+    color: black;
+    font-family: helvetica;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width: 100%;
+   
+}
+#nav{
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    padding: 4vh 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#part1,#part2,#part3{
+    display: flex;
+    gap: 1.7vw;
+    background-color: #fff;
+    font-size: 1.7vh;
+}
+#part1 img{
+    height: fit-content;
+    width: 4vw;
+}
+#part2{
+    margin-left: 8vw;
+}
+#part2 h3,#part3 h3,#part1 img{
+    font-weight: 500;
+    background-color: #fff;
+}
+.search-container input{
+    border-radius: 2vh;
+    border: .5px solid gray;
+    height: 4vh;
+    width: 8vw;
+    padding-left: 1vw;
+    background-color: #fff;
+}
+
+#part3 i{
+    color: rgb(103, 99, 99);
+    font-size: 3vh;
+    margin-top: .5vh;
+    font-weight: 100;
+    background-color: transparent;
+}
+.search-container{
+    background-color: transparent;
+}
+#part2 h3:hover{
+    cursor: pointer;
+    color: rgb(54, 56, 54);
+    border-bottom: 1px solid black;
+    
+}
+#part3 i:hover{
+    cursor: pointer;
+    color: black;
+    
+      
+    border-bottom: 1px solid black;
+}
+#discount{
+   
+    padding: 2vw;
+    gap: .5vw;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#discount h3{
+    margin-top: 12vh;
+    font-size: 2.5vh;
+    font-weight: 400;
+   
+    
+}
+#discount h4{
+    font-size: 1.5vh;
+    font-weight: 300;
+    border-bottom: 1px solid black;
+}
+#discount h4:hover{
+    cursor: pointer;
+    color: #666464;
+    border-bottom: 1px solid #666464;
+}
+
+video{
+    margin: 1vh 5vh;
+    display: flex;
+   width:95%;
+}
+#running{
+ 
+    line-height: 6vh;
+    padding: 1vw ;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#running h1{
+    font-size: 2.5vh;
+    font-weight: 400;
+}
+#running h2{
+    text-transform: uppercase;
+    width: 35%;
+    font-family: fantasy;
+    line-height: 8vh;
+    font-size: 8vh;
+   margin-left: 10vw;
+    font-weight: 600;
+    white-space: wrap;
+}
+#running h3{
+    font-size: 2.5vh;
+    font-weight: 300;
+}
+#running h4{
+    font-size: 2vh;
+    font-weight: 300;
+    border-radius: 50px;
+    background-color: black;
+    color: #fff;
+    width: 10vw;
+    height: 5vh;
+    margin-top: 2vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+}
+#featured{
+    
+    margin: 13vh 5vh;
+    display: flex;
+   width:95%;
+   gap: 2vh;
+   flex-direction: column;
+}
+#featured h2{
+    font-size: 3vh;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+#latest{
+    display: flex;
+    flex-direction: column;
+    padding:12vh 5vh ;
+}
+#latest #images,#shop #images{
+   gap: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#images img{
+    width: 100%;
+  
+}
+#latest h1,#shop h1{
+    font-size: 3.5;
+    font-weight: 400;
+    margin-bottom: 3vh;
+    text-transform: capitalize;
+
+}
+#images h2{
+    font-size: 2.5vh;  
+    font-weight: 400;
+    margin-top: 4vh;
+    text-transform: capitalize;
+}
+#shop{
+    
+    display: flex;
+    flex-direction: column;
+    padding:12vh 5vh ; 
+}
+#final{
+  
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8vw;
+   padding:10vh 5vh;
+    border-bottom: .1px solid rgb(151, 148, 148);
+}
+#final h2{
+    line-height: 8vh;
+    font-size: 3vh;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+#final h4{
+    text-transform: capitalize;
+    font-size: 2.2vh;
+    font-weight: 600;
+    color: #666464;
+    line-height: 4.5vh;
+}
+#final h4:hover{
+    color: black;
+    cursor: pointer;
+}
+#main h6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+    font-weight: 300;
+    margin: 3vh 0;
+    height: 6vh;
+}
