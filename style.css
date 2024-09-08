@@ -12,6 +12,8 @@ body,html{
 }
 #main{
     width: 100%;
+    display: flex;
+    flex-direction: column;
    
 }
 #nav{
@@ -20,6 +22,7 @@ body,html{
     width: 100%;
     padding: 4vh 7vh;
     display: flex;
+    border-bottom: .5px solid #dadada;
     align-items: center;
     justify-content: space-between;
 }
@@ -74,7 +77,7 @@ body,html{
 }
 #discount{
    
-    padding: 2vw;
+    padding: 2vw ;
     gap: .5vw;
     width: 100%;
     height: fit-content;
@@ -82,10 +85,12 @@ body,html{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+   
+   
 }
 #discount h3{
     margin-top: 12vh;
-    font-size: 2.5vh;
+    font-size: 2.8vh;
     font-weight: 400;
    
     
@@ -100,15 +105,26 @@ body,html{
     color: #666464;
     border-bottom: 1px solid #666464;
 }
+#video{
+   height: 70%;
+   display: flex;
+   justify-content: center;
 
-video{
+}
+#video video{
     margin: 1vh 5vh;
-    display: flex;
-   width:95%;
+    
+   width:calc(100% - 10vh);
+   height: 100%;
+   
+   justify-content: center;
+   
+   
 }
 #running{
- 
-    line-height: 6vh;
+    position: relative;
+    
+    line-height: 5vh;
     padding: 1vw ;
     width: 100%;
     display: flex;
@@ -120,6 +136,8 @@ video{
 #running h1{
     font-size: 2.5vh;
     font-weight: 400;
+    height: 100%;
+   
 }
 #running h2{
     text-transform: uppercase;
@@ -130,10 +148,12 @@ video{
    margin-left: 10vw;
     font-weight: 600;
     white-space: wrap;
+    height: 100%;
 }
 #running h3{
     font-size: 2.5vh;
     font-weight: 300;
+    height: 100%;
 }
 #running h4{
     font-size: 2vh;
@@ -141,7 +161,7 @@ video{
     border-radius: 50px;
     background-color: black;
     color: #fff;
-    width: 10vw;
+    width: 15vw;
     height: 5vh;
     margin-top: 2vh;
   display:flex;
@@ -214,8 +234,8 @@ video{
 }
 #final h4{
     text-transform: capitalize;
-    font-size: 2.2vh;
-    font-weight: 600;
+    font-size: 2vh;
+    font-weight: 550;
     color: #666464;
     line-height: 4.5vh;
 }
@@ -231,4 +251,139 @@ video{
     font-weight: 300;
     margin: 3vh 0;
     height: 6vh;
+}
+#part3 :nth-child(5){
+    display: none;
+}
+#part3 :nth-child(2){
+    display: none;
+}
+@media (max-width:600px) {
+   
+    #main{
+        padding-left: 4vw;
+    }
+   
+    #running h4{
+        line-height: -1vh;
+        
+    }
+  
+  
+   
+    #part1 img{
+        object-fit: cover;
+        object-fit: cover;
+       
+        width: 50px;
+
+    }
+
+
+    #video{
+      
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    video{
+        height: 100%;
+
+    }
+    #discout{
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        white-space: wrap;
+    }
+    #discount h3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      width: 100%;
+      font-size: 2vh;
+    }
+    #running{
+        line-height: 3vh;
+    }
+    #running h2{
+        display: flex;
+        align-items: center;
+        justify-content :center;
+        font-size: 7vw;
+        line-height: 7vh;
+        width: 100%;
+        font-weight: 500;
+       
+       
+    }
+    #running h3{
+        display: none;
+    }
+   
+    #final {
+     
+        flex-direction: column;
+        gap: 1vw;
+    }
+    #final h4{
+        display: none;
+    }
+    #images{
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+    }
+    #images img{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    #images h2{
+        font-size: 5vw;
+    }
+    #featured{
+        margin-top: 15vw;
+        margin-bottom: -5vw;
+    }
+ #featured img {
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 85%;
+    
+
+ }
+
+}
+@media (max-width:1000px) {
+    #nav #part2{
+        display: flex;
+        flex-direction: column;
+        display: none;
+
+        
+    }
+#running h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+   width: 50%;
+}
+#part3 :nth-child(5){
+    display: block;
+}
+#part3 :nth-child(2){
+    display: block;
+}
+.search-container input{
+    display: none;
+ }
 }
